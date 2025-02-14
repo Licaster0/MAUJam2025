@@ -362,7 +362,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.34285715, y: 0.34285715}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -425,6 +425,7 @@ GameObject:
   - component: {fileID: 4865988231615541293}
   - component: {fileID: 677589495643514516}
   - component: {fileID: 7953900543128284893}
+  - component: {fileID: 7953900543128284894}
   m_Layer: 0
   m_Name: Animator
   m_TagString: Untagged
@@ -491,7 +492,10 @@ MonoBehaviour:
   whatIsWall:
     serializedVersion: 2
     m_Bits: 64
-  attackMovement: []
+  attackMovement:
+  - {x: 0.4, y: 0.2}
+  - {x: 0, y: 0}
+  - {x: 6, y: 0}
   counterAttackDuration: 0.2
 --- !u!4 &4865988231615541293
 Transform:
@@ -629,6 +633,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7953900543128284894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3361236736274019318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c1efa28f14741bb8b81d4f676f41b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8110625646914963696
 GameObject:
   m_ObjectHideFlags: 0

@@ -115,6 +115,7 @@ public class Entity : MonoBehaviour
 
         Vector2 moveDirection = new Vector2(_xVelocity, _yVelocity).normalized;
         rb.velocity = moveDirection * moveSpeed;
+        FlipController(_xVelocity);
     }
     #endregion
     #region Collision

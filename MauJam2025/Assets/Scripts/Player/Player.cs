@@ -15,6 +15,7 @@ public class Player : Entity
     public PlayerStateMachine stateMachine { get; private set; }
     public PlayerIdleState idleState { get; private set; }
     public PlayerMoveState moveState { get; private set; }
+    public PlayerAttackState attackState { get; private set; }
     #endregion
 
     protected override void Awake()
@@ -24,6 +25,7 @@ public class Player : Entity
         stateMachine = new PlayerStateMachine();
         idleState = new PlayerIdleState(this, stateMachine, "Idle");
         moveState = new PlayerMoveState(this, stateMachine, "Move");
+        attackState = new PlayerAttackState(this, stateMachine, "Attack");
     }
 
     protected override void Start()
@@ -40,7 +42,15 @@ public class Player : Entity
         stateMachine.currentState.Update();
     }
 
+    public IEnumerator BusyFor(float _seconds)
+    {
+        isBusy = true;
+
+        yield return new WaitForSeconds(_seconds);
+        isBusy = false;
+    }
 
 
+    public void AnimationTrigger() => stateMachine.currentState.AnimationFinishTrigger();
 
 }
