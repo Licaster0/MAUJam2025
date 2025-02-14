@@ -11,6 +11,9 @@ public class Entity : MonoBehaviour
     public CapsuleCollider2D cd { get; private set; }
     #endregion
 
+    [Header("Move Info")]
+    public float moveSpeed = 12f;
+
     [Header("Knockback info")]
     [SerializeField] protected Vector2 knockbackPower = new Vector2(7, 12);
     [SerializeField] protected Vector2 knockbackOffset = new Vector2(.5f, 2);
@@ -110,12 +113,13 @@ public class Entity : MonoBehaviour
         if (isKnocked)
             return;
 
-        rb.velocity = new Vector2(_xVelocity, _yVelocity);
+        Vector2 moveDirection = new Vector2(_xVelocity, _yVelocity).normalized;
+        rb.velocity = moveDirection * moveSpeed;
     }
     #endregion
     #region Collision
 
-    public virtual bool IsWallDetected() => Physics2D.Raycast(wallCheck.position, Vector2.right * facingDir, wallCheckDistance, whatIsWall);
+    // public virtual bool IsWallDetected() => Physics2D.Raycast(wallCheck.position, Vector2.right * facingDir, wallCheckDistance, whatIsWall);
     protected virtual void OnDrawGizmos()
     {
         Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));

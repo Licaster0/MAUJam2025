@@ -11,9 +11,6 @@ public class Player : Entity
 
     public bool isBusy { get; private set; }
 
-    [Header("Move Info")]
-    public float moveSpeed = 12f;
-
     #region States
     public PlayerStateMachine stateMachine { get; private set; }
     public PlayerIdleState idleState { get; private set; }
