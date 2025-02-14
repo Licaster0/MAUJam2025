@@ -5,6 +5,12 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public int playerLightCount;
+
+    private void Start()
+    {
+        playerLightCount = 1;
+    }
 
     void Awake()
     {
