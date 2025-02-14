@@ -1,43 +1,47 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Doors : MonoBehaviour
 {
-
     [Header("Sayilar")]
     public int doorCount;
+    private bool isOpened = false; // Kapýnýn açýlýp açýlmadýðýný kontrol et
 
-    [Header("Referances")]
-    public GameObject DoorUiPanel;
-
-    private void Awake()
-    {
-        DoorUiPanel = GameObject.Find("DoorUiPanel").GetComponent<GameObject>();
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Player"))
+        if (collision.collider.CompareTag("Player") && !isOpened)
         {
-            GameManager.instance.playerLightCount -= doorCount;
-            DoorUiPanel.SetActive(true); // Uyarýyý aç
+            DoorManager.instance.ShowDoorUI(this); // UI panelini aç ve kapýyý sakla
         }
     }
+
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Player"))
         {
-            DoorUiPanel.SetActive(false); // Oyuncu uzaklaþýnca kapat
+            DoorManager.instance.HideDoorUI();
         }
     }
+
     public void DoorOpen()
     {
-        DoorUiPanel.SetActive(false); // UI paneli kapat
-        gameObject.SetActive(false);
-    }
+        if (isOpened) return; // Eðer kapý zaten açýldýysa tekrar açma
 
-    public void Cancel()
-    {
-        DoorUiPanel.SetActive(false); // UI paneli kapat
+        if (GameManager.instance == null)
+        {
+            Debug.LogError("GameManager bulunamadý!");
+            return;
+        }
+
+        if (GameManager.instance.playerLightCount >= doorCount)
+        {
+            isOpened = true; // Kapý açýldý olarak iþaretle
+            DoorManager.instance.HideDoorUI();
+            GameManager.instance.playerLightCount -= doorCount;
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("Yetersiz ýþýk sayýsý!");
+        }
     }
 }
