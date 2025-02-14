@@ -2,17 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerIdleState : MonoBehaviour
+public class PlayerIdleState : PlayerGroundedState
 {
-    // Start is called before the first frame update
-    void Start()
+    public PlayerIdleState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
-        
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void Enter()
     {
-        
+        base.Enter();
+        player.SetZeroVelocity();
+
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+    }
+
+    public override void Update()
+    {
+        base.Update();
+
+        if (xInput == player.facingDir && player.IsWallDetected())
+            return;
+
+        if (xInput != 0 || yInput != 0 && !player.isBusy)
+            stateMachine.ChangeState(player.moveState);
+
     }
 }
