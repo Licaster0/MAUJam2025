@@ -23,11 +23,8 @@ public class Entity : MonoBehaviour
     [Header("Collision info")]
     public Transform attackCheck;
     public float attackCheckRadius = 1.2f;
-    public Transform groundCheck;
-    [SerializeField] protected float groundCheckDistance = 1;
     [SerializeField] protected Transform wallCheck;
     [SerializeField] protected float wallCheckDistance = .8f;
-    [SerializeField] protected LayerMask whatIsGround;
     [SerializeField] protected LayerMask whatIsWall;
 
 
@@ -123,7 +120,6 @@ public class Entity : MonoBehaviour
     // public virtual bool IsWallDetected() => Physics2D.Raycast(wallCheck.position, Vector2.right * facingDir, wallCheckDistance, whatIsWall);
     protected virtual void OnDrawGizmos()
     {
-        Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
         Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance * facingDir, wallCheck.position.y));
         Gizmos.DrawWireSphere(attackCheck.position, attackCheckRadius);
     }
