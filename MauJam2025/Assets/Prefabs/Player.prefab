@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 136588921219640970}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,6 +81,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149cf170b922443c1a1a078f65852095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 4
   knockbackPower: {x: 7, y: 12}
   knockbackOffset: {x: 0.5, y: 2}
   knockbackDuration: 0.07
@@ -98,7 +99,6 @@ MonoBehaviour:
     m_Bits: 64
   attackMovement: []
   counterAttackDuration: 0.2
-  moveSpeed: 4
 --- !u!50 &4740420467624345608
 Rigidbody2D:
   serializedVersion: 4
@@ -234,6 +234,7 @@ GameObject:
   - component: {fileID: 1708620518167968141}
   - component: {fileID: 6725567227911384884}
   - component: {fileID: 4202040610355816317}
+  - component: {fileID: 1704386196050694190}
   m_Layer: 0
   m_Name: Animator
   m_TagString: Untagged
@@ -329,3 +330,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1704386196050694190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8832905548693224022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c1efa28f14741bb8b81d4f676f41b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

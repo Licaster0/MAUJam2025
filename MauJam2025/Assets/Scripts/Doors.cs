@@ -1,20 +1,47 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Doors : MonoBehaviour
 {
-
     [Header("Sayilar")]
     public int doorCount;
+    private bool isOpened = false; // Kapýnýn açýlýp açýlmadýðýný kontrol et
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.collider.CompareTag("Player") && !isOpened)
         {
-            GameManager.instance.playerLightCount -= doorCount;
-            gameObject.SetActive(false);
+            DoorManager.instance.ShowDoorUI(this); // UI panelini aç ve kapýyý sakla
         }
     }
 
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Player"))
+        {
+            DoorManager.instance.HideDoorUI();
+        }
+    }
+
+    public void DoorOpen()
+    {
+        if (isOpened) return; // Eðer kapý zaten açýldýysa tekrar açma
+
+        if (GameManager.instance == null)
+        {
+            Debug.LogError("GameManager bulunamadý!");
+            return;
+        }
+
+        if (GameManager.instance.playerLightCount >= doorCount)
+        {
+            isOpened = true; // Kapý açýldý olarak iþaretle
+            DoorManager.instance.HideDoorUI();
+            GameManager.instance.playerLightCount -= doorCount;
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("Yetersiz ýþýk sayýsý!");
+        }
+    }
 }
