@@ -66,6 +66,8 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 0
+  arrowTransform: {fileID: 0}
+  arrowPrefab: {fileID: 3020597457762813650, guid: 2dd85fc3a711e924a923721e2dc4eccb, type: 3}
   attackCounter: 0
   attackMovement:
   - {x: 0.2, y: 0}
@@ -131,8 +133,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.007888249}
-  m_Size: {x: 0.0859025, y: 0.2284195}
+  m_Offset: {x: 0, y: -0.007533789}
+  m_Size: {x: 0.0859025, y: 0.14779417}
   m_Direction: 0
 --- !u!114 &980691722414458007
 MonoBehaviour:
