@@ -36,12 +36,13 @@ public class Doors : MonoBehaviour
         {
             isOpened = true; // Kapý açýldý olarak iþaretle
             DoorManager.instance.HideDoorUI();
-            PlayerManager.instance.playerLightCount -= doorCount;
+            PlayerManager.instance.playerLightCount = Mathf.Max(0, PlayerManager.instance.playerLightCount - doorCount);
             gameObject.SetActive(false);
         }
         else
         {
             Debug.Log("Yetersiz ýþýk sayýsý!");
+            GameManager.instance.ShowWarning("Yetersiz ýþýk sayýsý!");
         }
     }
 }

@@ -2346,8 +2346,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.06342602}
-  m_Size: {x: 0.0859025, y: 0.10744501}
+  m_Offset: {x: 0, y: -0.027923113}
+  m_Size: {x: 0.0859025, y: 0.09053897}
   m_Direction: 0
 --- !u!50 &359545842
 Rigidbody2D:
@@ -2807,13 +2807,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemInteractText: {fileID: 1682992504}
-  ItemWarningText: {fileID: 844051866}
   ItemUi: {fileID: 1879013030}
   canChange: 0
-  shakeDuration: 0.5
-  fadeInDuration: 0.5
-  stayDuration: 1.5
-  fadeOutDuration: 1
 --- !u!212 &457640963
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4692,13 +4687,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemInteractText: {fileID: 1682992504}
-  ItemWarningText: {fileID: 844051866}
   ItemUi: {fileID: 2114827916}
   canChange: 0
-  shakeDuration: 0.5
-  fadeInDuration: 0.5
-  stayDuration: 1.5
-  fadeOutDuration: 1
 --- !u!212 &700128888
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6518,13 +6508,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemInteractText: {fileID: 1682992504}
-  ItemWarningText: {fileID: 844051866}
   ItemUi: {fileID: 1062163017}
   canChange: 0
-  shakeDuration: 0.5
-  fadeInDuration: 0.5
-  stayDuration: 1.5
-  fadeOutDuration: 1
 --- !u!212 &1152776956
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14421,6 +14406,14 @@ PrefabInstance:
       propertyPath: DoorUiPanel
       value: 
       objectReference: {fileID: 1417164067}
+    - target: {fileID: 5546531645892537861, guid: d3f2da33ce33b4d97aad461fed4a32b2, type: 3}
+      propertyPath: doorInfoText
+      value: 
+      objectReference: {fileID: 1411636139}
+    - target: {fileID: 6572565736683295571, guid: d3f2da33ce33b4d97aad461fed4a32b2, type: 3}
+      propertyPath: WarningText
+      value: 
+      objectReference: {fileID: 844051866}
     - target: {fileID: 7421764053480112029, guid: d3f2da33ce33b4d97aad461fed4a32b2, type: 3}
       propertyPath: m_Name
       value: Managers
