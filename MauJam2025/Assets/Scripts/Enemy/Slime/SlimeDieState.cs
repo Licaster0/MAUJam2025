@@ -2,17 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SlimeDieState : MonoBehaviour
+public class SlimeDieState : EnemyState
 {
-    // Start is called before the first frame update
-    void Start()
+    private Enemy_Slime enemy;
+    public SlimeDieState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, Enemy_Slime _enemy) : base(_enemyBase, _stateMachine, _animBoolName)
     {
-        
+        this.enemy = _enemy;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void Enter()
     {
-        
+        base.Enter();
+
+        enemy.cd.enabled = false;
+        enemy.rb.freezeRotation = false;
+
+        stateTimer = .15f;
+    }
+
+    public override void Update()
+    {
+        base.Update();
+
+        if (stateTimer > 0)
+            rb.velocity = new Vector2(0, 10);
     }
 }

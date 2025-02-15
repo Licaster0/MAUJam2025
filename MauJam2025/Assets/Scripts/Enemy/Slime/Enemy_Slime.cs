@@ -8,6 +8,7 @@ public class Enemy_Slime : Enemy
     public SlimeMoveState moveState { get; private set; }
     public SlimeBattleState battleState { get; private set; }
     public SlimeAttackState attackState { get; private set; }
+    public SlimeDieState dieState { get; private set; }
 
     protected override void Awake()
     {
@@ -17,6 +18,7 @@ public class Enemy_Slime : Enemy
         moveState = new SlimeMoveState(this, stateMachine, "Idle", this);
         battleState = new SlimeBattleState(this, stateMachine, "Idle", this);
         attackState = new SlimeAttackState(this, stateMachine, "Attack", this);
+        dieState = new SlimeDieState(this, stateMachine, "Die", this);
     }
 
     protected override void Start()
@@ -34,6 +36,8 @@ public class Enemy_Slime : Enemy
     public override void Die()
     {
         base.Die();
+
+        stateMachine.ChangeState(dieState);
     }
 
 

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1129087822906972771}
   - component: {fileID: 4145027223814753810}
   - component: {fileID: 408845332981885712}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: coin_03a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,9 +74,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2056458617
+  m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 0e6e91dfd3170416d9e948f0cfe02a52, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1408,8 +1408,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.28969383, g: 0.6603774, b: 0.32891962, a: 1}
-        key1: {r: 0.0141509175, g: 1, b: 0.117150106, a: 1}
+        key0: {r: 0.8606695, g: 1, b: 0, a: 1}
+        key1: {r: 1, g: 0.9950891, b: 0.015686274, a: 1}
         key2: {r: 1, g: 1, b: 1, a: 1}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 1, g: 1, b: 1, a: 0}
@@ -4895,9 +4895,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2056458617
+  m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 2
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -4956,7 +4956,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!1 &219880945203160143
 GameObject:
   m_ObjectHideFlags: 0
@@ -5033,7 +5033,7 @@ GameObject:
   - component: {fileID: 3418800677377425825}
   - component: {fileID: 4401919179900007293}
   - component: {fileID: 2341741829971485863}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: coin_04a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5093,9 +5093,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2056458617
+  m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 82cdd0b6c5608402ca19958ff4e43444, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5191,9 +5191,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2056458617
+  m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 2
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -6501,8 +6501,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.28969383, g: 0.6603774, b: 0.32891962, a: 1}
-        key1: {r: 0.0141509175, g: 1, b: 0.117150106, a: 1}
+        key0: {r: 0.8606695, g: 1, b: 0, a: 1}
+        key1: {r: 1, g: 0.9950891, b: 0.015686274, a: 1}
         key2: {r: 1, g: 1, b: 1, a: 1}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 1, g: 1, b: 1, a: 0}
@@ -9975,7 +9975,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!1 &3325911058901078040
 GameObject:
   m_ObjectHideFlags: 0
@@ -9990,7 +9990,7 @@ GameObject:
   - component: {fileID: 4822932925839487052}
   - component: {fileID: 3854446729685398507}
   - component: {fileID: 6303767944461281811}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: coin_04a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10050,9 +10050,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2056458617
+  m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 82cdd0b6c5608402ca19958ff4e43444, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10148,9 +10148,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2056458617
+  m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 2
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -11458,8 +11458,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.28969383, g: 0.6603774, b: 0.32891962, a: 1}
-        key1: {r: 0.0141509175, g: 1, b: 0.117150106, a: 1}
+        key0: {r: 0.8606695, g: 1, b: 0, a: 1}
+        key1: {r: 1, g: 0.9950891, b: 0.015686274, a: 1}
         key2: {r: 1, g: 1, b: 1, a: 1}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 1, g: 1, b: 1, a: 0}
@@ -14932,7 +14932,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!1 &3580526629580567381
 GameObject:
   m_ObjectHideFlags: 0
@@ -14947,7 +14947,7 @@ GameObject:
   - component: {fileID: 718154576961064499}
   - component: {fileID: 7658763190107915939}
   - component: {fileID: 1568272914779998443}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: coin_05a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15007,9 +15007,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2056458617
+  m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 8edee554cbc9a46fb8ed4805ab8be60c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15105,9 +15105,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2056458617
+  m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 2
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -16415,8 +16415,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.28969383, g: 0.6603774, b: 0.32891962, a: 1}
-        key1: {r: 0.0141509175, g: 1, b: 0.117150106, a: 1}
+        key0: {r: 0.8606695, g: 1, b: 0, a: 1}
+        key1: {r: 1, g: 0.9950891, b: 0.015686274, a: 1}
         key2: {r: 1, g: 1, b: 1, a: 1}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 1, g: 1, b: 1, a: 0}
@@ -19889,7 +19889,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!1 &5192265884455869862
 GameObject:
   m_ObjectHideFlags: 0
@@ -19904,7 +19904,7 @@ GameObject:
   - component: {fileID: 2495289542381244292}
   - component: {fileID: 8439513171637272874}
   - component: {fileID: 192061538179552541}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: coin_03a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19964,9 +19964,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2056458617
+  m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 0e6e91dfd3170416d9e948f0cfe02a52, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20062,9 +20062,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2056458617
+  m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 2
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -21372,8 +21372,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.28969383, g: 0.6603774, b: 0.32891962, a: 1}
-        key1: {r: 0.0141509175, g: 1, b: 0.117150106, a: 1}
+        key0: {r: 0.8606695, g: 1, b: 0, a: 1}
+        key1: {r: 1, g: 0.9950891, b: 0.015686274, a: 1}
         key2: {r: 1, g: 1, b: 1, a: 1}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 1, g: 1, b: 1, a: 0}
@@ -24846,7 +24846,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!1 &5351582978828144446
 GameObject:
   m_ObjectHideFlags: 0
@@ -24861,7 +24861,7 @@ GameObject:
   - component: {fileID: 5226367157541814031}
   - component: {fileID: 5931472223962939358}
   - component: {fileID: 5933761698888698019}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: coin_01a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24921,9 +24921,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2056458617
+  m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 4c7da21351c614e33a1d94ee0195596f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -25019,9 +25019,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2056458617
+  m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 2
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -26329,8 +26329,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.28969383, g: 0.6603774, b: 0.32891962, a: 1}
-        key1: {r: 0.0141509175, g: 1, b: 0.117150106, a: 1}
+        key0: {r: 0.8606695, g: 1, b: 0, a: 1}
+        key1: {r: 1, g: 0.9950891, b: 0.015686274, a: 1}
         key2: {r: 1, g: 1, b: 1, a: 1}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 1, g: 1, b: 1, a: 0}
@@ -29803,7 +29803,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!1 &5643230026788142413
 GameObject:
   m_ObjectHideFlags: 0
@@ -29818,7 +29818,7 @@ GameObject:
   - component: {fileID: 2348513666355439536}
   - component: {fileID: 7319534190028444908}
   - component: {fileID: 8383889535286833527}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: coin_02a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29878,9 +29878,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2056458617
+  m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: dc2902ea9e72f4dc480fa0751881463c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -29976,9 +29976,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2056458617
+  m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 2
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -31286,8 +31286,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.28969383, g: 0.6603774, b: 0.32891962, a: 1}
-        key1: {r: 0.0141509175, g: 1, b: 0.117150106, a: 1}
+        key0: {r: 0.8606695, g: 1, b: 0, a: 1}
+        key1: {r: 1, g: 0.9950891, b: 0.015686274, a: 1}
         key2: {r: 1, g: 1, b: 1, a: 1}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 1, g: 1, b: 1, a: 0}
@@ -34760,4 +34760,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
