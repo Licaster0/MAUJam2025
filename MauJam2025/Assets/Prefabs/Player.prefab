@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3744006053618632682}
@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 4
-  knockbackPower: {x: 7, y: 12}
+  knockbackPower: {x: 2, y: 1}
   knockbackOffset: {x: 0.5, y: 2}
   knockbackDuration: 0.07
   attackCheck: {fileID: 5313385868910832865}
@@ -70,9 +70,9 @@ MonoBehaviour:
   arrowPrefab: {fileID: 3020597457762813650, guid: 2dd85fc3a711e924a923721e2dc4eccb, type: 3}
   attackCounter: 0
   attackMovement:
-  - {x: 0.2, y: 0}
-  - {x: 0, y: 0}
-  - {x: 6, y: 0}
+  - {x: 0.001, y: 0}
+  - {x: 2, y: 0}
+  - {x: 0.001, y: 0}
   counterAttackDuration: 0.2
 --- !u!50 &2326587857509223195
 Rigidbody2D:
@@ -134,7 +134,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.007533789}
-  m_Size: {x: 0.0859025, y: 0.14779417}
+  m_Size: {x: 0.5535973, y: 0.9524572}
   m_Direction: 0
 --- !u!114 &980691722414458007
 MonoBehaviour:
@@ -161,7 +161,7 @@ MonoBehaviour:
     baseValue: 0
     modifiers: 
   damage:
-    baseValue: 15
+    baseValue: 25
     modifiers: 
   critChance:
     baseValue: 40
@@ -170,7 +170,7 @@ MonoBehaviour:
     baseValue: 0
     modifiers: 
   maxHealth:
-    baseValue: 0
+    baseValue: 100
     modifiers: 
   currentHealth: 0
 --- !u!114 &2204003578980312263
@@ -274,7 +274,7 @@ Transform:
   m_GameObject: {fileID: 698713845995157023}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1142, y: 0, z: 0}
+  m_LocalPosition: {x: 0.65, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
