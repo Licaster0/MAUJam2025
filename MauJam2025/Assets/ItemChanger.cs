@@ -13,10 +13,10 @@ public class ItemChanger : MonoBehaviour
     [SerializeField] private GameObject ItemUi;
     [SerializeField] private bool canChange = false;
 
-    public float shakeDuration = 0.5f; // Sarsýlma süresi
-    public float fadeInDuration = 0.5f; // Alfa artýþ süresi
-    public float stayDuration = 1.5f; // Ekranda kalma süresi
-    public float fadeOutDuration = 1f; // Alfa azalýþ süresi
+    public float shakeDuration = 0.5f;
+    public float fadeInDuration = 0.5f;
+    public float stayDuration = 1.5f;
+    public float fadeOutDuration = 1f;
 
     private void Update()
     {
@@ -34,29 +34,29 @@ public class ItemChanger : MonoBehaviour
     {
         if (PlayerManager.instance.player.attackCounter == switchNumber)
         {
-            ShowWarning("Zaten Bu Silahý Kullanýyorsunuz");
+            ShowWarning("Zaten Bu SilahÄ± KullanÄ±yorsunuz");
             Invoke(nameof(ClearWarningText), 1f);
             ItemUi.SetActive(false);
         }
         PlayerManager.instance.player.attackCounter = switchNumber;
-        Debug.Log("Ýtem Deðiþtirildi");
+        Debug.Log("Ä°tem DeÄŸiÅŸtirildi");
         ItemUi.SetActive(false);
     }
     public void ShowWarning(string message)
     {
         ItemWarningText.text = message;
-        ItemWarningText.color = new Color(1, 0, 0, 0); // Baþlangýçta görünmez ve kýrmýzý yap
-        ItemWarningText.transform.localScale = Vector3.zero; // Küçük baþlasýn
+        ItemWarningText.color = new Color(1, 0, 0, 0); // Baï¿½langï¿½ï¿½ta gï¿½rï¿½nmez ve kï¿½rmï¿½zï¿½ yap
+        ItemWarningText.transform.localScale = Vector3.zero; // Kï¿½ï¿½ï¿½k baï¿½lasï¿½n
 
         Sequence seq = DOTween.Sequence();
 
-        seq.Append(ItemWarningText.DOFade(1, fadeInDuration)) // Alpha 0 - 1 (Görünür yap)
-           .Join(ItemWarningText.transform.DOScale(1.2f, fadeInDuration).SetEase(Ease.OutBack)) // Büyüme efekti
-           .Append(ItemWarningText.transform.DOShakePosition(shakeDuration, new Vector3(20f, 0, 0), 20, 90, false, true)) // Saða sola sallanma
-           .AppendInterval(stayDuration) // Bir süre ekranda kal
-           .Append(ItemWarningText.DOFade(0, fadeOutDuration)) // Yavaþça kaybol
-           .Join(ItemWarningText.transform.DOScale(0, fadeOutDuration).SetEase(Ease.InBack)) // Küçülerek kaybol
-           .OnComplete(() => ItemWarningText.text = ""); // Kaybolunca içeriði temizle
+        seq.Append(ItemWarningText.DOFade(1, fadeInDuration)) // Alpha 0 - 1 (Gï¿½rï¿½nï¿½r yap)
+           .Join(ItemWarningText.transform.DOScale(1.2f, fadeInDuration).SetEase(Ease.OutBack)) // Bï¿½yï¿½me efekti
+           .Append(ItemWarningText.transform.DOShakePosition(shakeDuration, new Vector3(20f, 0, 0), 20, 90, false, true)) // Saï¿½a sola sallanma
+           .AppendInterval(stayDuration) // Bir sï¿½re ekranda kal
+           .Append(ItemWarningText.DOFade(0, fadeOutDuration)) // Yavaï¿½ï¿½a kaybol
+           .Join(ItemWarningText.transform.DOScale(0, fadeOutDuration).SetEase(Ease.InBack)) // Kï¿½ï¿½ï¿½lerek kaybol
+           .OnComplete(() => ItemWarningText.text = ""); // Kaybolunca iï¿½eriï¿½i temizle
     }
     private void ClearWarningText()
     {

@@ -1356,7 +1356,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 700128887}
+      - m_Target: {fileID: 1152776955}
         m_TargetAssemblyTypeName: ItemChanger, Assembly-CSharp
         m_MethodName: ChangeItem
         m_Mode: 3
@@ -2509,7 +2509,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 700128887}
+      - m_Target: {fileID: 457640962}
         m_TargetAssemblyTypeName: ItemChanger, Assembly-CSharp
         m_MethodName: ChangeItem
         m_Mode: 3
@@ -4579,7 +4579,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 700128887}
+      - m_Target: {fileID: 1152776955}
         m_TargetAssemblyTypeName: ItemChanger, Assembly-CSharp
         m_MethodName: CancelWeapon
         m_Mode: 1
@@ -5015,7 +5015,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 700128887}
+      - m_Target: {fileID: 457640962}
         m_TargetAssemblyTypeName: ItemChanger, Assembly-CSharp
         m_MethodName: CancelWeapon
         m_Mode: 1
