@@ -21,7 +21,6 @@ public class PlayerGroundedState : PlayerState
     public override void Update()
     {
         base.Update();
-
         if (Input.GetKeyDown(KeyCode.Mouse0))
             stateMachine.ChangeState(player.attackState);
     }

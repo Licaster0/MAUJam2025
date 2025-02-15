@@ -28,7 +28,8 @@ public class ShopScript : MonoBehaviour
         if(PlayerManager.instance.Coin >= lightCost)
         {
             Debug.Log("Iþýk Alýndý");
-            PlayerManager.instance.playerLightCount++;
+            PlayerManager.instance.playerMaxLight++;
+            //PlayerManager.instance.playerLightCount++;
             PlayerManager.instance.Coin -= lightCost;
             ShopUi.SetActive(false);
         }

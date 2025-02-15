@@ -3851,11 +3851,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a484fd5dff3c0524dbc0d4d43980c8b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 359545840}
+  spawnTransform: {fileID: 870344148}
   BonfireInteractText: {fileID: 1249295571}
   BonfireUi: {fileID: 110783328}
   canBonfire: 0
-  GlobalLight: {fileID: 778457038}
   blackCanvasGroup: {fileID: 288833683}
+  safeZoneDoorScript: {fileID: 3110610042626745921}
+  loading: 0
+  GlobalLight: {fileID: 778457038}
 --- !u!4 &596651875
 Transform:
   m_ObjectHideFlags: 0
@@ -5451,6 +5455,37 @@ Transform:
   - {fileID: 422898626}
   m_Father: {fileID: 1502500241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -179.96}
+--- !u!1 &870344147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 870344148}
+  m_Layer: 7
+  m_Name: PlayerSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &870344148
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870344147}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &936792858
 GameObject:
   m_ObjectHideFlags: 0
@@ -13883,6 +13918,10 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 607450723}
+    - target: {fileID: 5015280888153350598, guid: d3f2da33ce33b4d97aad461fed4a32b2, type: 3}
+      propertyPath: lightText
+      value: 
+      objectReference: {fileID: 520246097}
     - target: {fileID: 5546531645892537861, guid: d3f2da33ce33b4d97aad461fed4a32b2, type: 3}
       propertyPath: DoorUiPanel
       value: 
@@ -15072,6 +15111,7 @@ MonoBehaviour:
   - {fileID: 6166714625758996446, guid: 2774b7bfb2a245e4793b5aa1b6761bd6, type: 3}
   spawnPoint: {fileID: 1110729246}
   uiPanel: {fileID: 540440729}
+  levelLoaded: 0
   GlobalLight: {fileID: 778457038}
 --- !u!114 &3278100279471784628
 MonoBehaviour:
@@ -17913,6 +17953,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1110729246}
   - {fileID: 1843410848}
+  - {fileID: 870344148}
   - {fileID: 359545844}
   - {fileID: 357718532}
   - {fileID: 390230765}

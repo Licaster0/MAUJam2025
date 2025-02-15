@@ -10,21 +10,29 @@ public class PlayerManager : MonoBehaviour
     [Header("Referances")]
     public Player player;
     public int playerLightCount;
+    public TextMeshProUGUI lightText;
+    public int playerMaxLight;
     public int Coin;
     public TextMeshProUGUI coinText;
 
     private void Start()
     {
         playerLightCount = 1;
+        playerMaxLight = playerLightCount;
     }
     private void FixedUpdate()
     {
-        UpdateCoinGui();
+        UpdateGui();
     }
-    public void UpdateCoinGui()
+    public void MaxLightUpdate()
     {
-        if (coinText != null)
-            coinText.text = Coin.ToString();
+        playerLightCount = playerMaxLight;
+    }
+    public void UpdateGui()
+    {
+        coinText.text = Coin.ToString();
+        lightText.text = playerLightCount.ToString();
+
     }
     void Awake()
     {
