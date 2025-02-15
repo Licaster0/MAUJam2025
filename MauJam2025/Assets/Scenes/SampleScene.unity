@@ -317,6 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e1f967a007bc4840944e0948922219f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   popUpTextPrefab: {fileID: 0}
   flashDuration: 0.2
   hitMat: {fileID: 2100000, guid: a79739c715de840808437468ad4e4aea, type: 2}
@@ -971,6 +972,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 520659607744642056, guid: 2a30ad8f4c50e401ba32e9696efc2f2b, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2204003578980312263, guid: 2a30ad8f4c50e401ba32e9696efc2f2b, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 4730617241618486341}
     - target: {fileID: 6789898301482483697, guid: 2a30ad8f4c50e401ba32e9696efc2f2b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
