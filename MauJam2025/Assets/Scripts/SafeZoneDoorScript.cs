@@ -1,6 +1,8 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
 public class SafeZoneDoorScript : MonoBehaviour
@@ -10,9 +12,9 @@ public class SafeZoneDoorScript : MonoBehaviour
     public List<GameObject> levelPrefabs; // Olasý seviyeleri içeren prefab listesi
     public Transform spawnPoint; // Seviye spawn noktasý
     public GameObject uiPanel; // UI penceresi (Evet / Hayýr butonlarý için)
+    public Light2D GlobalLight;
 
     [Space]
-    private bool isPlayerInZone = false;
     private GameObject spawnedLevel;
 
     private void Start()
@@ -24,7 +26,6 @@ public class SafeZoneDoorScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            isPlayerInZone = true;
             uiPanel.SetActive(true); // Uyarýyý aç
         }
     }
@@ -33,7 +34,6 @@ public class SafeZoneDoorScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            isPlayerInZone = false;
             uiPanel.SetActive(false); // Oyuncu uzaklaþýnca kapat
         }
     }
@@ -42,18 +42,26 @@ public class SafeZoneDoorScript : MonoBehaviour
     {
         if (spawnedLevel != null)
         {
-            Destroy(spawnedLevel); // Önceki leveli temizle
+            DeleteLevel();
         }
         safeZoneCollider.SetActive(false);
         int randomIndex = Random.Range(0, levelPrefabs.Count);
         spawnedLevel = Instantiate(levelPrefabs[randomIndex], spawnPoint.position, Quaternion.identity);
 
         uiPanel.SetActive(false); // UI paneli kapat
-
+        FadeLight(0.08f, 2f); // 2 saniyede 0.11f'e düþsün
         gameObject.SetActive(false);
 
     }
-
+    public void DeleteLevel()
+    {
+        Destroy(spawnedLevel); // Önceki leveli temizle
+    }
+    public void FadeLight(float targetIntensity, float duration)
+    {
+        DOTween.To(() => GlobalLight.intensity, x => GlobalLight.intensity = x, targetIntensity, duration)
+               .SetEase(Ease.InOutSine); // Daha akýcý geçiþ
+    }
     public void Cancel()
     {
         uiPanel.SetActive(false); // UI paneli kapat
