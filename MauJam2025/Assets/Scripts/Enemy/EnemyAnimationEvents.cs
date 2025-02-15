@@ -18,9 +18,9 @@ public class EnemyAnimationEvents : MonoBehaviour
         {
             if (hit.GetComponent<Player>() != null)
             {
-                // PlayerStats target = hit.GetComponent<PlayerStats>();
+                PlayerStats target = hit.GetComponent<PlayerStats>();
 
-                // enemy.stats.DoDamage(target);
+                enemy.stats.DoDamage(target);
             }
         }
     }

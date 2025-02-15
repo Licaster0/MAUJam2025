@@ -63,6 +63,6 @@ public class EnemyStats : CharacterStats
 
         // PlayerManager.instance.coinCurrency += coinDropAmount.GetValue();
 
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, 1f);
     }
 }

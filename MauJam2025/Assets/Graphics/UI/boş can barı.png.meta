@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1372a6d53a4234603b5a5b7ccc69b476
+guid: b2576569d33e443f5a57cf99adf033e1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 88.57143
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,127 +123,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "karakter sald\u0131r\u0131_0"
+      name: "bos\u0327 can bar\u0131_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 256
+        x: 95
+        y: 92
+        width: 380
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52bef93af58d74110a445f3436ff5506
-      internalID: 856681645
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "karakter sald\u0131r\u0131_1"
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bc7a886884be4d4ca0621f0e5e0a6c6
-      internalID: -1637048454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "karakter sald\u0131r\u0131_2"
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 372c5f7ceb0124e53bf47b98544d34a9
-      internalID: 1483891435
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "karakter sald\u0131r\u0131_3"
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e5d28748ed9344a35a492e45bb954f90
-      internalID: -273116478
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "karakter sald\u0131r\u0131_4"
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c29a7492da35445a1a00eb695ecc11ea
-      internalID: 1154119337
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "karakter sald\u0131r\u0131_5"
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c77a875130428413e93dd6d03377dc1a
-      internalID: -1150155318
+      spriteID: 47d635d2de1d74f13a89c250ac47f8bb
+      internalID: -1479815276
       vertices: []
       indices: 
       edges: []
@@ -259,12 +154,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "karakter sald\u0131r\u0131_0": 856681645
-      "karakter sald\u0131r\u0131_1": -1637048454
-      "karakter sald\u0131r\u0131_2": 1483891435
-      "karakter sald\u0131r\u0131_3": -273116478
-      "karakter sald\u0131r\u0131_4": 1154119337
-      "karakter sald\u0131r\u0131_5": -1150155318
+      "bos\u0327 can bar\u0131_0": -1479815276
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

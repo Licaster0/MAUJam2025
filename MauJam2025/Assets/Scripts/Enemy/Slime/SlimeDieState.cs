@@ -15,7 +15,6 @@ public class SlimeDieState : EnemyState
         base.Enter();
 
         enemy.cd.enabled = false;
-        enemy.rb.freezeRotation = false;
 
         stateTimer = .15f;
     }
