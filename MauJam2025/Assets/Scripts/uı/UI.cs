@@ -9,7 +9,7 @@ public class UI : MonoBehaviour
 
     void Start()
     {
-
+        SwitchTo(inGameUI);
     }
 
     void Update()
