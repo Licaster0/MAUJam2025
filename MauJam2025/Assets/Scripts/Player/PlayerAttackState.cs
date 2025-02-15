@@ -13,6 +13,7 @@ public class PlayerAttackState : PlayerState
     public override void Enter()
     {
         base.Enter();
+        player.moveSpeed /= 2;
         xInput = 0;
 
         player.anim.SetInteger("AttackCounter", player.attackCounter);
@@ -33,6 +34,7 @@ public class PlayerAttackState : PlayerState
     public override void Exit()
     {
         base.Exit();
+        player.moveSpeed *= 2;
         player.StartCoroutine("BusyFor", .15f);
 
         lastTimeAttacked = Time.time;
@@ -42,7 +44,7 @@ public class PlayerAttackState : PlayerState
         base.Update();
 
         if (stateTimer < 0)
-            player.SetZeroVelocity();
+            // player.SetZeroVelocity();
 
         if (isAnimationFinished)
             stateMachine.ChangeState(player.idleState);

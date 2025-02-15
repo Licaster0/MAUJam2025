@@ -29,4 +29,7 @@ public class PlayerAnimationEvent : MonoBehaviour
             }
         }
     }
+
+    private void CreateArrowTrigger() => player.CreateArrowTrigger();
+
 }

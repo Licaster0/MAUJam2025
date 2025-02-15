@@ -62,12 +62,12 @@ public class Arrow_Controller : MonoBehaviour
 
     private void StuckInto(Collider2D collision)
     {
-        GetComponentInChildren<ParticleSystem>().Stop();
+        // GetComponentInChildren<ParticleSystem>().Stop();
         GetComponent<CapsuleCollider2D>().enabled = false;
-        canMove = false;
-        rb.isKinematic = true;
-        rb.constraints = RigidbodyConstraints2D.FreezeAll;
-        transform.parent = collision.transform;
+        // canMove = false;
+        // rb.isKinematic = true;
+        // rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        // transform.parent = collision.transform;
         // AudioManager.instance.PlaySFX(36, null);
         Destroy(gameObject, Random.Range(5, 7));
     }

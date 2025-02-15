@@ -4932,7 +4932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLayerName: Enemy
-  canMove: 0
+  canMove: 1
   flipped: 0
 --- !u!70 &3020597457762813648
 CapsuleCollider2D:

@@ -5,6 +5,13 @@ using UnityEngine;
 public class Player : Entity
 {
     public PlayerFx fx { get; private set; }
+
+    [Header("Arrow Info")]
+    public Transform arrowTransform;
+    public GameObject arrowPrefab;
+    private int arrowSpeed = 15;
+
+
     [Header("Attack Details")]
     public int attackCounter;
     public Vector2[] attackMovement;
@@ -50,6 +57,12 @@ public class Player : Entity
 
         yield return new WaitForSeconds(_seconds);
         isBusy = false;
+    }
+
+    public void CreateArrowTrigger()
+    {
+        GameObject newArrow = Instantiate(arrowPrefab, attackCheck.position, Quaternion.identity);
+        newArrow.GetComponent<Arrow_Controller>().SetupArrow(arrowSpeed * facingDir, stats);
     }
 
 
