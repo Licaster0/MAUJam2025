@@ -14,8 +14,8 @@ public class Enemy_Slime : Enemy
         base.Awake();
 
         idleState = new SlimeIdleState(this, stateMachine, "Idle", this);
-        moveState = new SlimeMoveState(this, stateMachine, "Move", this);
-        battleState = new SlimeBattleState(this, stateMachine, "Move", this);
+        moveState = new SlimeMoveState(this, stateMachine, "Idle", this);
+        battleState = new SlimeBattleState(this, stateMachine, "Idle", this);
         attackState = new SlimeAttackState(this, stateMachine, "Attack", this);
     }
 

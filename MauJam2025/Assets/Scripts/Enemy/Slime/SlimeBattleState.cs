@@ -26,23 +26,14 @@ public class SlimeBattleState : EnemyState
     {
         base.Update();
         if (enemy.IsPlayerDetected())
-        {
-            stateTimer = enemy.battleTime;
-
             if (enemy.IsPlayerDetected().distance < enemy.attackDistance)
             {
                 if (CanAttack())
                     stateMachine.ChangeState(enemy.attackState);
             }
-        }
-        else
-        {
-            if (stateTimer < 0 || Vector2.Distance(player.transform.position, enemy.transform.position) > 7)
-                stateMachine.ChangeState(enemy.idleState);
-        }
 
-        if (enemy.IsPlayerDetected() && enemy.IsPlayerDetected().distance < enemy.attackDistance - .1f)
-            return;
+        if (Vector2.Distance(enemy.transform.position, player.position) > enemy.attackDistance)
+            enemy.transform.position = Vector2.MoveTowards(enemy.transform.position, player.position, enemy.moveSpeed * Time.deltaTime);
 
         BattleStateFlipControll();
     }
