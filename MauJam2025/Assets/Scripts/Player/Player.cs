@@ -32,7 +32,7 @@ public class Player : Entity
     protected override void Start()
     {
         base.Start();
-
+        fx = GetComponent<PlayerFx>();
         stateMachine.Initialize(idleState);
     }
 

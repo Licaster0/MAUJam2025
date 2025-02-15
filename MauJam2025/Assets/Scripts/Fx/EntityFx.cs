@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EntityFx : MonoBehaviour
 {
-    protected Player player;
+    [SerializeField] protected Player player;
     protected SpriteRenderer sr;
 
     [Header("Pop Up Text")]
@@ -21,11 +21,14 @@ public class EntityFx : MonoBehaviour
     [SerializeField] private GameObject hitFx;
     [SerializeField] private GameObject criticalHitFx;
 
+    void Awake()
+    {
+    }
 
     protected virtual void Start()
     {
         sr = GetComponentInChildren<SpriteRenderer>();
-        player = PlayerManager.instance.player;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         originalMat = sr.material;
     }
 
