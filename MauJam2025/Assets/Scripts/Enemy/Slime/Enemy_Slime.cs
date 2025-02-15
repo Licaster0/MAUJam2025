@@ -31,5 +31,10 @@ public class Enemy_Slime : Enemy
         base.Update();
     }
 
+    public override void Die()
+    {
+        base.Die();
+    }
+
 
 }

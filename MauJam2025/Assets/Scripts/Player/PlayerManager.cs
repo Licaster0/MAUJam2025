@@ -23,7 +23,8 @@ public class PlayerManager : MonoBehaviour
     }
     public void UpdateCoinGui()
     {
-        coinText.text = Coin.ToString();
+        if (coinText != null)
+            coinText.text = Coin.ToString();
     }
     void Awake()
     {
