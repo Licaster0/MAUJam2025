@@ -1737,6 +1737,8 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 0
+  arrowTransform: {fileID: 1790799745}
+  arrowPrefab: {fileID: 3020597457762813650, guid: 2dd85fc3a711e924a923721e2dc4eccb, type: 3}
   attackCounter: 0
   attackMovement:
   - {x: 0.4, y: 0.2}
