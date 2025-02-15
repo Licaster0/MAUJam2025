@@ -7,7 +7,13 @@ public class PlayerManager : MonoBehaviour
     public static PlayerManager instance;
 
     public Player player;
+    public int playerLightCount;
 
+    private void Start()
+    {
+        playerLightCount = 1;
+    }
+    public int Coin;
     void Awake()
     {
         if (instance == null)
