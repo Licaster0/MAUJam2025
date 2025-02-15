@@ -4340,7 +4340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b324b91f2be128e41acddc7d970a0c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorCount: 0
+  doorCount: 1
 --- !u!61 &497044382083844109
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4738,7 +4738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b324b91f2be128e41acddc7d970a0c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorCount: 0
+  doorCount: 2
 --- !u!61 &988097818374197019
 BoxCollider2D:
   m_ObjectHideFlags: 0
