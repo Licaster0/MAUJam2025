@@ -95,15 +95,22 @@ public class EntityFx : MonoBehaviour
 
             hitFxRotation = new Vector3(0, yRotation, zRotation);
 
-            HitStopEffect(.2f, .2f);
+            CriticalHitStopEffect(.2f, .2f);
         }
 
+        LowHitStopEffect();
         GameObject newHitFx = Instantiate(hitPrefab, _target.position + new Vector3(xPosition, yPosition), Quaternion.identity, _target);
         newHitFx.transform.Rotate(hitFxRotation);
         Destroy(newHitFx, .5F);
     }
 
-    public void HitStopEffect(float _duration, float _slowdownFactor)
+    private void LowHitStopEffect()
+    {
+        player.fx.ScreenShake(player.fx.shakeLowDamage);
+        StartCoroutine(HitStop(.05f, .1f));
+    }
+
+    public void CriticalHitStopEffect(float _duration, float _slowdownFactor)
     {
         player.fx.ScreenShake(player.fx.shakeHighDamage);
         StartCoroutine(HitStop(_duration, _slowdownFactor));

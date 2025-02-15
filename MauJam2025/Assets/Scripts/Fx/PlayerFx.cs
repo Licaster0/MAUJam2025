@@ -9,6 +9,7 @@ public class PlayerFx : EntityFx
     private CinemachineImpulseSource screenShake;
     [SerializeField] private float shakeMultiplier;
     public Vector3 shakeHighDamage;
+    public Vector3 shakeLowDamage;
 
 
     [Space]

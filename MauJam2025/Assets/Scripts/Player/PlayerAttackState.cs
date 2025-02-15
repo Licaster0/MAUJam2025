@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class PlayerAttackState : PlayerState
 {
-    public int attackCounter { get; private set; }
 
     private float lastTimeAttacked;
-    private float comboWindow = 2;
     public PlayerAttackState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
@@ -17,10 +15,7 @@ public class PlayerAttackState : PlayerState
         base.Enter();
         xInput = 0;
 
-        if (attackCounter > 2 || Time.time >= lastTimeAttacked + comboWindow)
-            attackCounter = 0;
-
-        player.anim.SetInteger("AttackCounter", attackCounter);
+        player.anim.SetInteger("AttackCounter", player.attackCounter);
 
 
         float attackDir = player.facingDir;
@@ -29,7 +24,7 @@ public class PlayerAttackState : PlayerState
             attackDir = xInput;
 
 
-        player.SetVelocity(player.attackMovement[attackCounter].x * attackDir, player.attackMovement[attackCounter].y);
+        player.SetVelocity(player.attackMovement[player.attackCounter].x * attackDir, player.attackMovement[player.attackCounter].y);
 
 
         stateTimer = .1f;
@@ -40,7 +35,6 @@ public class PlayerAttackState : PlayerState
         base.Exit();
         player.StartCoroutine("BusyFor", .15f);
 
-        attackCounter++;
         lastTimeAttacked = Time.time;
     }
     public override void Update()

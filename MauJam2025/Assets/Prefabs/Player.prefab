@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 383288995404022222}
   m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66,6 +66,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 0
+  attackCounter: 0
   attackMovement:
   - {x: 0.4, y: 0.2}
   - {x: 0, y: 0}
@@ -161,7 +162,7 @@ MonoBehaviour:
     baseValue: 15
     modifiers: 
   critChance:
-    baseValue: 100
+    baseValue: 40
     modifiers: 
   critPower:
     baseValue: 0
@@ -182,6 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd7fbc3ef8de48929f4bb58105ad472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 2998810432375726132}
   popUpTextPrefab: {fileID: 0}
   flashDuration: 0.2
   hitMat: {fileID: 2100000, guid: a79739c715de840808437468ad4e4aea, type: 2}
@@ -189,6 +191,7 @@ MonoBehaviour:
   criticalHitFx: {fileID: 1086922381196770188, guid: 071d9070ed21e4f06834a2960c4fb391, type: 3}
   shakeMultiplier: 0.2
   shakeHighDamage: {x: 0.5, y: 0.3, z: 0}
+  shakeLowDamage: {x: 0.1, y: 0.1, z: 0}
   dustFx: {fileID: 0}
   coinFx: {fileID: 0}
 --- !u!114 &383288995404022222
@@ -349,8 +352,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: -856217102, guid: b62bcf757bcb2453b9a38e87af64e264, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: -1989642091, guid: 9abf6bfc66ef64c7f87ce7197a7b77bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
