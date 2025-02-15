@@ -1497,7 +1497,7 @@ Transform:
   m_GameObject: {fileID: 778457037}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4914184, y: 4.499635, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3624,7 +3624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   safeZoneCollider: {fileID: 2115885160}
   levelPrefabs:
-  - {fileID: 7525569001912345132, guid: 2774b7bfb2a245e4793b5aa1b6761bd6, type: 3}
+  - {fileID: 6166714625758996446, guid: 2774b7bfb2a245e4793b5aa1b6761bd6, type: 3}
   spawnPoint: {fileID: 1110729246}
   uiPanel: {fileID: 540440729}
 --- !u!483693784 &3312038618169319355
