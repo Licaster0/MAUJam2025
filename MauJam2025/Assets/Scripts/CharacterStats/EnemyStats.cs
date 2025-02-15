@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyStats : CharacterStats
 {
     private Enemy enemy;
-    // private ItemDrop myDropSystem;
+    private ItemDrop myDropSystem;
     public Stat coinDropAmount;
 
     [Header("Level Details")]
@@ -58,7 +58,7 @@ public class EnemyStats : CharacterStats
     protected override void Die()
     {
         base.Die();
-        // myDropSystem.GenerateDrop();
+        myDropSystem.GenerateDrop();
         enemy.Die();
 
         // PlayerManager.instance.coinCurrency += coinDropAmount.GetValue();
