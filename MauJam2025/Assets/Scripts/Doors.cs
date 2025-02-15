@@ -32,11 +32,11 @@ public class Doors : MonoBehaviour
             return;
         }
 
-        if (GameManager.instance.playerLightCount >= doorCount)
+        if (PlayerManager.instance.playerLightCount >= doorCount)
         {
             isOpened = true; // Kapý açýldý olarak iþaretle
             DoorManager.instance.HideDoorUI();
-            GameManager.instance.playerLightCount -= doorCount;
+            PlayerManager.instance.playerLightCount -= doorCount;
             gameObject.SetActive(false);
         }
         else
