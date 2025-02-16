@@ -15656,7 +15656,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5015280888153350598, guid: d3f2da33ce33b4d97aad461fed4a32b2, type: 3}
       propertyPath: Coin
-      value: 200
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5015280888153350598, guid: d3f2da33ce33b4d97aad461fed4a32b2, type: 3}
       propertyPath: player
