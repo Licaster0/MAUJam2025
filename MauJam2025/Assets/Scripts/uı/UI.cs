@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UI : MonoBehaviour
 {
@@ -12,6 +13,18 @@ public class UI : MonoBehaviour
         SwitchTo(inGameUI);
     }
 
+    public void ResumeGame()
+    {
+        SwitchTo(inGameUI);
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -35,6 +48,15 @@ public class UI : MonoBehaviour
         if (_menu != null)
         {
             _menu.SetActive(true);
+        }
+
+        if (_menu == inGameUI)
+        {
+            PauseGame(false);
+        }
+        else
+        {
+            PauseGame(true);
         }
     }
 
@@ -60,5 +82,16 @@ public class UI : MonoBehaviour
         }
 
         SwitchTo(inGameUI);
+    }
+    public void PauseGame(bool _pause)
+    {
+        if (_pause)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
     }
 }
