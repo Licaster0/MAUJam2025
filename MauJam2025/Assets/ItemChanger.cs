@@ -33,6 +33,7 @@ public class ItemChanger : MonoBehaviour
         }
         PlayerManager.instance.player.attackCounter = switchNumber;
         Debug.Log("İtem Değiştirildi");
+        AudioManager.instance.PlaySFX(0, transform);
         ItemUi.SetActive(false);
     }
     public void CancelWeapon()

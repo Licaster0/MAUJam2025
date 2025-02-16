@@ -28,7 +28,7 @@ public class EntityFx : MonoBehaviour
     protected virtual void Start()
     {
         sr = GetComponentInChildren<SpriteRenderer>();
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player = PlayerManager.instance.player;
         originalMat = sr.material;
     }
 
