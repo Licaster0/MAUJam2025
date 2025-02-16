@@ -60,6 +60,7 @@ public class EnemyStats : CharacterStats
         base.Die();
         myDropSystem.GenerateDrop();
         enemy.Die();
+        AudioManager.instance.PlaySFX(6, transform);
 
         // PlayerManager.instance.coinCurrency += coinDropAmount.GetValue();
 

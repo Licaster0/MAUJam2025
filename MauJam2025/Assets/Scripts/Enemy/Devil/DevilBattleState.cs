@@ -47,7 +47,7 @@ public class DevilBattleState : EnemyState
 
             if (hit.collider == null || !hit.collider.CompareTag("Wall")) // Duvara çarpmıyorsa hareket et
             {
-                enemy.rb.MovePosition(enemy.rb.position + direction * 27 * Time.deltaTime);
+                enemy.rb.MovePosition(enemy.rb.position + direction * 4f * Time.deltaTime);
             }
         }
 
