@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
@@ -20,10 +22,19 @@ public class PlayerManager : MonoBehaviour
     public Image[] lightImages; // UI'de kullandığınız ışıklar (Image array)
     public Sprite fullLight; // Dolu ışık sprite'
     public Sprite emptyLight; // Boş ışık sprite'
+    private float[] lightLevels;
+    public Light2D playerLight;
+    public float lightLevel0;
+    public float lightLevel1;
+    public float lightLevel2;
+    public float lightLevel3;
+    public float lightLevel4;
 
     private void Start()
     {
         playerLightCount = 1;
+        // Işık seviyelerini başlangıçta ayarla
+        lightLevels = new float[] { lightLevel0, lightLevel1, lightLevel2, lightLevel3, lightLevel4 };
         playerMaxLight = playerLightCount;
         UpdateGui(); // İlk GUI güncellemesi
     }
@@ -37,6 +48,12 @@ public class PlayerManager : MonoBehaviour
     public void UpdateGui()
     {
         coinText.text = Coin.ToString();
+
+        // Işık seviyesini güncelle
+        if (playerLightCount >= 0 && playerLightCount < lightLevels.Length)
+        {
+            playerLight.intensity = lightLevels[playerLightCount];
+        }
 
         // İşığın durumunu UI'ye yansıt
         for (int i = 0; i < lightImages.Length; i++)
