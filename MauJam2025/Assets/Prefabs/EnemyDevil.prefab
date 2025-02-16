@@ -190,7 +190,7 @@ MonoBehaviour:
   counterImage: {fileID: 0}
   idleTime: 2
   battleTime: 7
-  agroDistance: 3
+  agroDistance: 2.4
   attackDistance: 1
   attackCooldown: 0
   minAttackCooldown: 1
@@ -221,7 +221,7 @@ MonoBehaviour:
     baseValue: 0
     modifiers: 
   damage:
-    baseValue: 7
+    baseValue: 10
     modifiers: 
   critChance:
     baseValue: 0
@@ -230,7 +230,7 @@ MonoBehaviour:
     baseValue: 0
     modifiers: 
   maxHealth:
-    baseValue: 70
+    baseValue: 110
     modifiers: 
   currentHealth: 0
   coinDropAmount:
@@ -282,7 +282,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 6
+  m_Constraints: 4
 --- !u!70 &4905079772012863935
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -452,7 +452,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0.4999999
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -557,7 +557,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0.4999999
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
