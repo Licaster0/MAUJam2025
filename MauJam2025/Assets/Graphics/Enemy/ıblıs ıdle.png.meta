@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c163143f366954dc8afbe81048d90592
+guid: f8abf8e028be8403c9d5887ad79b75c7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 60
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u0131bl\u0131s sald\u0131r\u0131_0"
+      name: "\u0131bl\u0131s \u0131dle_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
-        height: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 514beefd54c564fc0951b99d6df34eb2
-      internalID: 838446226
+      spriteID: 00832d862646149ffa0d01788238206d
+      internalID: 1063574009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0131bl\u0131s sald\u0131r\u0131_1"
+      name: "\u0131bl\u0131s \u0131dle_1"
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 0
-        width: 256
-        height: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b577d67def47f43af9009c82ad613687
-      internalID: 1533328912
+      spriteID: de21dd30052934c87b45d87b12c4b67a
+      internalID: 861917355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0131bl\u0131s sald\u0131r\u0131_2"
+      name: "\u0131bl\u0131s \u0131dle_2"
       rect:
         serializedVersion: 2
-        x: 512
+        x: 128
         y: 0
-        width: 256
-        height: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 349c5aa6632dc4972881f511b2e75b9b
-      internalID: 1044860600
+      spriteID: e279364704046429ab1dfb1217803801
+      internalID: -37822683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0131bl\u0131s sald\u0131r\u0131_3"
+      name: "\u0131bl\u0131s \u0131dle_3"
       rect:
         serializedVersion: 2
-        x: 768
+        x: 192
         y: 0
-        width: 256
-        height: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,29 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebf1d51f7ae0c4845ac12c0b26629a4e
-      internalID: 1075865706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u0131bl\u0131s sald\u0131r\u0131_4"
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b92cbfcf2e1254db286116dae8f8323b
-      internalID: 2087847377
+      spriteID: f9a225735d7664019a164626cba856f9
+      internalID: 1474488519
       vertices: []
       indices: 
       edges: []
@@ -238,11 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\u0131bl\u0131s sald\u0131r\u0131_0": 838446226
-      "\u0131bl\u0131s sald\u0131r\u0131_1": 1533328912
-      "\u0131bl\u0131s sald\u0131r\u0131_2": 1044860600
-      "\u0131bl\u0131s sald\u0131r\u0131_3": 1075865706
-      "\u0131bl\u0131s sald\u0131r\u0131_4": 2087847377
+      "\u0131bl\u0131s \u0131dle_0": 1063574009
+      "\u0131bl\u0131s \u0131dle_1": 861917355
+      "\u0131bl\u0131s \u0131dle_2": -37822683
+      "\u0131bl\u0131s \u0131dle_3": 1474488519
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
