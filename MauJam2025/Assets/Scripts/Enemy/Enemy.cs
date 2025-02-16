@@ -27,7 +27,7 @@ public class Enemy : Entity
     [HideInInspector] public float lastTimeAttacked;
 
     public EnemyStateMachine stateMachine { get; private set; }
-    // public EntityFX fx { get; private set; }
+    public EntityFx fx { get; private set; }
     private Player player;
     public string lastAnimBoolName { get; private set; }
     protected override void Awake()
@@ -42,7 +42,7 @@ public class Enemy : Entity
     {
         base.Start();
 
-        // fx = GetComponent<EntityFX>();
+        fx = GetComponent<EntityFx>();
     }
 
     protected override void Update()

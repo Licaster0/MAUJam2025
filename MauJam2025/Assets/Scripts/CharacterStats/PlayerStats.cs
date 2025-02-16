@@ -33,7 +33,7 @@ public class PlayerStats : CharacterStats
 
         if (_damage > GetMaxHealthValue() * .3f)
         {
-            player.SetupKnockbackPower(new Vector2(10, 6));
+            player.SetupKnockbackPower(new Vector2(2, 3));
             player.fx.ScreenShake(player.fx.shakeHighDamage);
 
             int randomSound = Random.Range(32, 33);
