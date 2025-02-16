@@ -25,6 +25,7 @@ public class Player : Entity
     public PlayerIdleState idleState { get; private set; }
     public PlayerMoveState moveState { get; private set; }
     public PlayerAttackState attackState { get; private set; }
+    public PlayerDieState dieState { get; private set; }
     #endregion
 
     protected override void Awake()
@@ -35,6 +36,7 @@ public class Player : Entity
         idleState = new PlayerIdleState(this, stateMachine, "Idle");
         moveState = new PlayerMoveState(this, stateMachine, "Move");
         attackState = new PlayerAttackState(this, stateMachine, "Attack");
+        dieState = new PlayerDieState(this, stateMachine, "Die");
     }
 
     protected override void Start()
@@ -65,7 +67,11 @@ public class Player : Entity
         newArrow.GetComponent<Arrow_Controller>().SetupArrow(arrowSpeed * facingDir, stats);
     }
 
-
+    public override void Die()
+    {
+        base.Die();
+        stateMachine.ChangeState(dieState);
+    }
     public void AnimationTrigger() => stateMachine.currentState.AnimationFinishTrigger();
 
 }
