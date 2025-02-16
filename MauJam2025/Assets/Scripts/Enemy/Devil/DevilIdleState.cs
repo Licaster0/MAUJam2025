@@ -11,6 +11,7 @@ public class DevilIdleState : DevilGroundedState
     public override void Enter()
     {
         base.Enter();
+        enemy.SetZeroVelocity();
         stateTimer = enemy.idleTime;
     }
 
@@ -22,7 +23,6 @@ public class DevilIdleState : DevilGroundedState
     public override void Update()
     {
         base.Update();
-
         if (stateTimer < 0)
             stateMachine.ChangeState(enemy.moveState);
     }

@@ -8,6 +8,7 @@ public class Enemy_Devil : Enemy
     public DevilMoveState moveState { get; private set; }
     public DevilAttackState attackState { get; private set; }
     public DevilBattleState battleState { get; private set; }
+    public DevilDieState dieState { get; private set; }
 
     protected override void Awake()
     {
@@ -18,6 +19,7 @@ public class Enemy_Devil : Enemy
         moveState = new DevilMoveState(this, stateMachine, "Move", this);
         attackState = new DevilAttackState(this, stateMachine, "Attack", this);
         battleState = new DevilBattleState(this, stateMachine, "Idle", this);
+        dieState = new DevilDieState(this, stateMachine, "Idle", this);
     }
 
     protected override void Start()
@@ -29,5 +31,11 @@ public class Enemy_Devil : Enemy
     protected override void Update()
     {
         base.Update();
+    }
+
+    public override void Die()
+    {
+        base.Die();
+        stateMachine.ChangeState(dieState);
     }
 }

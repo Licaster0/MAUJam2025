@@ -27,14 +27,27 @@ public class BatBattleState : EnemyState
         base.Update();
 
         if (enemy.IsPlayerDetected())
+        {
             if (enemy.IsPlayerDetected().distance < enemy.attackDistance)
             {
                 if (CanAttack())
                     stateMachine.ChangeState(enemy.attackState);
             }
+        }
 
+        // Oyuncu menzil dışındaysa hareket et
         if (Vector2.Distance(enemy.transform.position, player.position) > enemy.attackDistance)
-            enemy.transform.position = Vector2.MoveTowards(enemy.transform.position, player.position, enemy.moveSpeed * Time.deltaTime);
+        {
+            Vector2 direction = (player.position - enemy.transform.position).normalized;
+
+            // Raycast ile önünde engel olup olmadığını kontrol et
+            RaycastHit2D hit = Physics2D.Raycast(enemy.transform.position, direction, enemy.moveSpeed * Time.deltaTime);
+
+            if (hit.collider == null || !hit.collider.CompareTag("Wall")) // Duvara çarpmıyorsa hareket et
+            {
+                enemy.rb.MovePosition(enemy.rb.position + direction * 27 * Time.deltaTime);
+            }
+        }
 
         BattleStateFlipControll();
     }
