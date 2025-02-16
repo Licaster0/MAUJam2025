@@ -38,7 +38,7 @@ public class Arrow_Controller : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         arrowSpeed = _speed;
         stats = _stats;
-        // AudioManager.instance.PlaySFX(35, null);
+        AudioManager.instance.PlaySFX(4, null);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

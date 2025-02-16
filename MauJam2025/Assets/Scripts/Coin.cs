@@ -64,7 +64,7 @@ public class Coin : MonoBehaviour
                     player.fx.PlayCoinFX();
                     Destroy(coin.gameObject);
                     PlayerManager.instance.Coin += coinValue;
-                    // AudioManager.instance.PlaySFX(7, null);
+                    AudioManager.instance.PlaySFX(8, null);
                     coins.RemoveAt(i);
                 }
 

@@ -26,6 +26,7 @@ public class PlayerAnimationEvent : MonoBehaviour
                 if (_target != null)
                     player.stats.DoDamage(_target);
 
+                AudioManager.instance.PlaySFX(Random.Range(1, 3), transform);
             }
         }
     }
