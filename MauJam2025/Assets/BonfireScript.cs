@@ -9,6 +9,7 @@ public class BonfireScript : MonoBehaviour
 {
     [Header("Referances")]
     [SerializeField] GameObject Player;
+    [SerializeField] UI_InGame game;
     [SerializeField] Transform spawnTransform;
     [SerializeField] private TextMeshProUGUI BonfireInteractText;
     [SerializeField] private GameObject BonfireUi;
@@ -38,6 +39,8 @@ public class BonfireScript : MonoBehaviour
     {
         loading = true;
         Invoke(nameof(loadingFalse), 2.9f);
+        PlayerManager.instance.player.stats.currentHealth = PlayerManager.instance.player.stats.GetMaxHealthValue();
+        game.UpdateHealthUI();
         Debug.Log("BonfireLit");
         BonfireUi.SetActive(false);
         FadeLight(1, 0, 2f); // 2 saniyede 0.11f'e düşsün

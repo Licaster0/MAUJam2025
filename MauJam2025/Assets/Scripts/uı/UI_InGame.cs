@@ -13,7 +13,7 @@ public class UI_InGame : MonoBehaviour
         if (playerStats != null)
             playerStats.onHealthChanged += UpdateHealthUI;
     }
-    private void UpdateHealthUI()
+    public void UpdateHealthUI()
     {
         slider.maxValue = playerStats.GetMaxHealthValue();
         slider.value = playerStats.currentHealth;

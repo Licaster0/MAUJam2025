@@ -3806,6 +3806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 537744324}
+  game: {fileID: 501785886}
   spawnTransform: {fileID: 870344148}
   BonfireInteractText: {fileID: 1249295571}
   BonfireUi: {fileID: 110783328}
