@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI WarningText;
 
+    public GameObject DeathScreen;
+
     public float shakeDuration = 0.5f;
     public float fadeInDuration = 0.5f;
     public float stayDuration = 1.5f;
@@ -19,6 +21,10 @@ public class GameManager : MonoBehaviour
             instance = this;
         else
             Destroy(gameObject);
+    }
+    private void Start()
+    {
+        DeathScreen.SetActive(false);
     }
 
     public void ShowWarning(string message)

@@ -28,6 +28,7 @@ public class PlayerDieState : PlayerState
 
     private IEnumerator LoadScene()
     {
+        GameManager.instance.DeathScreen.SetActive(true);
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(1);
         // player.transform.position = new Vector2(12, 0);
