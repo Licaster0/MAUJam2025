@@ -5103,7 +5103,7 @@ MonoBehaviour:
   ShopInteractText: {fileID: 1617740753}
   ShopUi: {fileID: 544327961}
   canShop: 0
-  lightCost: 5
+  lightCost: 100
 --- !u!70 &799839944
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -14727,7 +14727,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5015280888153350598, guid: d3f2da33ce33b4d97aad461fed4a32b2, type: 3}
       propertyPath: Coin
-      value: 30
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5015280888153350598, guid: d3f2da33ce33b4d97aad461fed4a32b2, type: 3}
       propertyPath: player
