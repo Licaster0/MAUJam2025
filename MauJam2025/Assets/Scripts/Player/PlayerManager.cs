@@ -71,7 +71,7 @@ public class PlayerManager : MonoBehaviour
         }
 
         // Light Text güncellemesi
-        lightText.text = playerLightCount.ToString() + "/" + playerMaxLight.ToString();
+        // lightText.text = playerLightCount.ToString() + "/" + playerMaxLight.ToString();
     }
 
     // Işık sayısını arttırmak için fonksiyon
